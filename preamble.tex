@@ -1,0 +1,52 @@
+% ---------- إعدادات الطباعة الاحترافية ----------
+\usepackage[top=2.8cm,bottom=2.8cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ---------- المحرك واللغة ----------
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+\setmainlanguage{arabic}
+\setotherlanguage{english}
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.2]{Amiri}
+
+% ---------- الحزم العلمية ----------
+\usepackage{amsmath,amssymb}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\pgfplotsset{compat=1.18}
+\tcbuselibrary{skins,breakable}
+
+% ---------- الألوان السيادية ----------
+\definecolor{SovereignBlue}{RGB}{0,33,71}
+\definecolor{WarningRed}{RGB}{140,20,20}
+\definecolor{CodeGray}{gray}{0.45}
+
+% ---------- تنسيق العناوين ----------
+\titleformat{\chapter}
+  {\color{SovereignBlue}\Huge\bfseries}
+  {\thechapter}{1em}{}
+\titleformat{\section}
+  {\color{SovereignBlue}\Large\bfseries}
+  {\thesection}{1em}{}
+
+% ---------- الثابت السيادي ----------
+\newcommand{\unified}{34400}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=SovereignBlue,
+    urlcolor=SovereignBlue,
+    pdftitle={المجلد الكوني اليقين – النسخة العربية},
+    pdfauthor={هشام شيكر}
+}
