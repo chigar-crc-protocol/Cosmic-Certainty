@@ -1,0 +1,28 @@
+\documentclass[12pt,a4paper,oneside]{book}
+
+% استدعاء المحرك السيادي الموحد
+\input{preamble}
+
+\begin{document}
+
+% استدعاء الغلاف السيادي
+\input{cover}
+
+% استدعاء صفحة الاقتباس
+\input{quote-page}
+
+\tableofcontents
+\newpage
+
+% استدعاء الفصول الموحدة
+\input{chapters/00-introduction}
+\input{chapters/01-mecca-core}
+\input{chapters/02-constants}
+\input{chapters/04-saqr-mechanics}
+\input{chapters/05-cosmic-calendar}
+
+% الملاحق
+\appendix
+\input{appendices/B-geodesic}
+
+\end{document}
